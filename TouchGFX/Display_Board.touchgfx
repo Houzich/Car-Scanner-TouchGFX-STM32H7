@@ -1,0 +1,4353 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu_ECUs",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu_ECUs1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_scrollableContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_scrollableContainer1",
+            "X": 100,
+            "Y": 80,
+            "Width": 685,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Change_Back",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ECUs action_Back",
+              "ActionComponent": "ECUs"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back",
+            "HasValue": false
+          }
+        ],
+        "Name": "ECUs",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "maindark1.png",
+            "Alpha": 255,
+            "Name": "maindark1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "buton2.png",
+            "Released": "buton2.png",
+            "Alpha": 0,
+            "Name": "button1",
+            "X": 262,
+            "Y": 5,
+            "Width": 167,
+            "Height": 471,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png",
+            "Released": "__designer\\blue_buttons_round_edge_icon_button.png",
+            "Alpha": 0,
+            "Style": "Style1",
+            "Name": "button1_2",
+            "X": 10,
+            "Y": 341,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "CarBrands"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_PKW",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call Main action_PKW",
+              "ActionComponent": "Main"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_PKW",
+            "HasValue": false
+          }
+        ],
+        "Name": "Main",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "pkwselector.png",
+            "Alpha": 255,
+            "Name": "pkwselector1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [],
+            "Type": "ScrollableContainer",
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": false,
+            "ScrollbarsVisible": true,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Red": 237,
+              "Green": 20,
+              "Blue": 20
+            },
+            "ScrollbarsAlpha": 255,
+            "Name": "scrollableContainer1",
+            "X": 80,
+            "Y": 0,
+            "Width": 720,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call CarBrands action_Back_Click",
+              "ActionComponent": "CarBrands"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "CarBrands",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId18",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Read_Errors.png",
+                "IconPressed": "Button_Light_Selector.png"
+              }
+            ],
+            "Name": "flexButton_ReadErrors",
+            "X": 80,
+            "Y": 63,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Delete_Errors.png",
+                "IconPressed": "Button_Light_Selector.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId19",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_DeleteErrors",
+            "X": 320,
+            "Y": 63,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Coding.png",
+                "IconPressed": "Button_Light_Selector.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId20",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_Coding",
+            "X": 560,
+            "Y": 63,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Live_Data.png",
+                "IconPressed": "Button_Light_Selector.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId21",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_LiveData",
+            "X": 80,
+            "Y": 262,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Actuator.png",
+                "IconPressed": "Button_Light_Selector.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId22",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_Actuator",
+            "X": 320,
+            "Y": 262,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Button_Service_Functions.png",
+                "IconPressed": "Button_Light_Selector.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId23",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_ServiceFunctions",
+            "X": 560,
+            "Y": 262,
+            "Width": 239,
+            "Height": 199,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 50,
+                "Height": 50,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton_Back_ECUs",
+            "X": 749,
+            "Y": 262,
+            "Width": 50,
+            "Height": 50,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "InteractionLiveData",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_LiveData"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "LiveData"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call FunctionSelection action_Back_Click",
+              "ActionComponent": "FunctionSelection"
+            }
+          },
+          {
+            "InteractionName": "Interaction_ECUs",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Back_ECUs"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ECUs"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "FunctionSelection",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu_LiveData",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LiveData_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Components": [
+              {
+                "Components": [],
+                "Type": "ListLayout",
+                "Direction": "South",
+                "Name": "listLayout_Main",
+                "X": 0,
+                "Y": 0,
+                "Width": 250,
+                "Height": 250,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "ScrollableContainer",
+            "HorizontalScrollEnabled": false,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": false,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ScrollbarsAlpha": 255,
+            "Name": "scrollableContainer1",
+            "X": 100,
+            "Y": 80,
+            "Width": 680,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FunctionSelection"
+            }
+          }
+        ],
+        "Name": "LiveData",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 45,
+                "TextId": "SingleUseId26",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 50,
+                  "Green": 50,
+                  "Blue": 50
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 51,
+                "Y": 163,
+                "IconReleased": "device.png",
+                "IconPressed": "device.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 330,
+                "Height": 441,
+                "LockToFlexButtonSize": false,
+                "BorderSize": 2,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorPressed": {
+                  "Red": 20,
+                  "Green": 20,
+                  "Blue": 20
+                },
+                "ColorBorderReleased": {
+                  "Red": 20,
+                  "Green": 20,
+                  "Blue": 20
+                },
+                "ColorBorderPressed": {
+                  "Red": 50,
+                  "Green": 50,
+                  "Blue": 50
+                }
+              }
+            ],
+            "Name": "flexButton_Automatically",
+            "X": 102,
+            "Y": 18,
+            "Width": 330,
+            "Height": 441,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 51,
+                "Y": 163,
+                "IconReleased": "device.png",
+                "IconPressed": "device.png"
+              },
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 45,
+                "TextId": "SingleUseId27",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 50,
+                  "Green": 50,
+                  "Blue": 50
+                }
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 325,
+                "Height": 441,
+                "LockToFlexButtonSize": false,
+                "BorderSize": 2,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 0,
+                  "Blue": 0
+                },
+                "ColorPressed": {
+                  "Red": 20,
+                  "Green": 20,
+                  "Blue": 20
+                },
+                "ColorBorderReleased": {
+                  "Red": 20,
+                  "Green": 20,
+                  "Blue": 20
+                },
+                "ColorBorderPressed": {
+                  "Red": 50,
+                  "Green": 50,
+                  "Blue": 50
+                }
+              }
+            ],
+            "Name": "flexButton_Manually",
+            "X": 452,
+            "Y": 18,
+            "Width": 325,
+            "Height": 441,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Button_Manually_Clicked",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Manually"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ModelYear"
+            }
+          },
+          {
+            "InteractionName": "Button_Automatically_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Automatically"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "WaitingCar"
+            }
+          },
+          {
+            "InteractionName": "Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "CarBrands"
+            }
+          },
+          {
+            "InteractionName": "Action_Automatically_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Automatically"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call AutomaticSearch action_Automatically_Click",
+              "ActionComponent": "AutomaticSearch"
+            }
+          },
+          {
+            "InteractionName": "Action_Manually_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Manually"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call AutomaticSearch action_Manually_Click",
+              "ActionComponent": "AutomaticSearch"
+            }
+          },
+          {
+            "InteractionName": "Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call AutomaticSearch action_Back_Click",
+              "ActionComponent": "AutomaticSearch"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Automatically_Click",
+            "HasValue": false
+          },
+          {
+            "Name": "action_Manually_Click",
+            "HasValue": false
+          },
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "AutomaticSearch",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_WaitingPopup",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_WaitingPopup1",
+            "X": 100,
+            "Y": 61,
+            "Width": 600,
+            "Height": 358,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Wait",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1000
+            }
+          },
+          {
+            "InteractionName": "Change_Screen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Wait"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HaveFoundCar"
+            }
+          }
+        ],
+        "Name": "WaitingCar",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId29",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 114,
+            "Y": 115,
+            "Width": 447,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 16,
+                "Y": 26,
+                "TextId": "SingleUseId30",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 50,
+                  "Green": 50,
+                  "Blue": 50
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 25,
+                "Y": 26,
+                "IconReleased": "Button_diagnose_icon.png",
+                "IconPressed": ""
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 251,
+                "Height": 76,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 2,
+                "ColorReleased": {
+                  "Red": 7,
+                  "Green": 57,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton_Start",
+            "X": 510,
+            "Y": 279,
+            "Width": 251,
+            "Height": 76,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_CarItemScrollList",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_CarItemScrollList1",
+            "X": 114,
+            "Y": 164,
+            "Width": 360,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_CarItemScrollList",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_CarItemScrollList2",
+            "X": 114,
+            "Y": 235,
+            "Width": 360,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_CarItemScrollList",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_CarItemScrollList3",
+            "X": 114,
+            "Y": 306,
+            "Width": 360,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_CarItemScrollList",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_CarItemScrollList4",
+            "X": 114,
+            "Y": 376,
+            "Width": 360,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call HaveFoundCar action_Back_Click",
+              "ActionComponent": "HaveFoundCar"
+            }
+          },
+          {
+            "InteractionName": "Button_Start_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Start"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "WaitingData"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "HaveFoundCar",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 12000,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_WaitingPopup",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_WaitingPopup1",
+            "X": 100,
+            "Y": 61,
+            "Width": 600,
+            "Height": 358,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Wait",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 1000
+            }
+          },
+          {
+            "InteractionName": "Change_Screen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Wait"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ECUs"
+            }
+          }
+        ],
+        "Name": "WaitingData",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "Loading.png",
+            "Alpha": 255,
+            "Name": "Loading1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionFade",
+              "Alpha": 250,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 2000,
+              "ActionComponent": "Loading1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "Type": "ActionDelay",
+              "Duration": 2000
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Interaction2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerPhysicalButtonClicked",
+              "ButtonKey": 0
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ModelNumber"
+            }
+          }
+        ],
+        "Name": "Zostawka",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_scrollableContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_scrollableContainer1",
+            "X": 100,
+            "Y": 80,
+            "Width": 685,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AutomaticSearch"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ModelYear action_Back_Click",
+              "ActionComponent": "ModelYear"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "ModelYear",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_scrollableContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_scrollableContainer1",
+            "X": 100,
+            "Y": 80,
+            "Width": 685,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ModelYear"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ModelSeries action_Back_Click",
+              "ActionComponent": "ModelSeries"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "ModelSeries",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_scrollableContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_scrollableContainer1",
+            "X": 100,
+            "Y": 80,
+            "Width": 685,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_TopMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_TopMenu1",
+            "X": 81,
+            "Y": 0,
+            "Width": 719,
+            "Height": 80,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "ModelSeries"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Action_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionCustom2",
+              "ActionCustomTypeName": "Call ModelNumber action_Back_Click",
+              "ActionComponent": "ModelNumber"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action_Back_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "ModelNumber",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0,
+        "Includes": "#include \"../../../Data/CarModels.hpp\"\r\nusing namespace Data;"
+      },
+      {
+        "Components": [
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId33",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_Settings_239x239.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_Settings",
+            "X": 560,
+            "Y": 0,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId34",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_User_Data.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_User_Data",
+            "X": 319,
+            "Y": 0,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId35",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_Support.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_Support",
+            "X": 80,
+            "Y": 239,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId36",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_Information.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_Information",
+            "X": 319,
+            "Y": 240,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId37",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_Update.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_Update",
+            "X": 560,
+            "Y": 240,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 170,
+                "TextId": "SingleUseId38",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "IconReleased": "Button\\Settings\\Button_WiFi.png",
+                "IconPressed": "Button\\Settings\\Button_Light_Selector_239x239.png"
+              }
+            ],
+            "Name": "flexButton_WiFi",
+            "X": 80,
+            "Y": 0,
+            "Width": 239,
+            "Height": 239,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Button_WiFi_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_WiFi"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "WiFiConnecting"
+            }
+          },
+          {
+            "InteractionName": "Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "CarBrands"
+            }
+          },
+          {
+            "InteractionName": "Button_Settings_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButton_Settings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Display"
+            }
+          }
+        ],
+        "Name": "Settings",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_BackGround_Keyboard",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_BackGround_Keyboard",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_BackGround",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_BackGround",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_WiFiListennigContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_WiFiListennigContainer",
+            "X": 80,
+            "Y": 0,
+            "Width": 720,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_WiFiMenuContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_WiFiMenuContainer",
+            "X": 80,
+            "Y": 0,
+            "Width": 720,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_WiFiConnectingContainer",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_WiFiConnectingContainer",
+            "X": 80,
+            "Y": 0,
+            "Width": 720,
+            "Height": 480,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 36,
+              "Green": 28,
+              "Blue": 28
+            },
+            "Alpha": 255,
+            "Name": "box_BackgroundBtnBack",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 180,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_Button_Back_s.png",
+            "Released": "Button\\Button_Back.png",
+            "Alpha": 255,
+            "Name": "button_Back",
+            "X": 0,
+            "Y": 0,
+            "Width": 81,
+            "Height": 81,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu_Back",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu_Back",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Button_Back_LeftMenu_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu_Back trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu_Back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          },
+          {
+            "InteractionName": "Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ],
+        "Name": "WiFiConnecting",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "CustomContainerDefinitionName": "CC_BackGround",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_BackGround1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "CC_LeftMenu_Back",
+            "Type": "CustomContainerInstance",
+            "Name": "cC_LeftMenu_Back",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId59",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 93,
+            "Y": 17,
+            "Width": 170,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId60",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId61",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "textArea_Brightness_Percentage",
+            "X": 300,
+            "Y": 17,
+            "Width": 100,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Slider",
+            "IsHorizontalSlider": true,
+            "BackgroundUnselected": "__designer\\Blue_Slider_Horizontal_Large_Slider_Round_back.png",
+            "BackgroundSelected": "__designer\\Blue_Slider_Horizontal_Large_Slider_Round_fill.png",
+            "Indicator": "__designer\\Blue_Slider_Horizontal_Large_Indicators_Slider_Round_nob.png",
+            "BackgroundX": 2,
+            "BackgroundY": 22,
+            "IndicatorPos": 0,
+            "IndicatorMax": 621,
+            "IndicatorMin": 0,
+            "ValueMax": 100,
+            "ValueMin": 8,
+            "InitValue": 9,
+            "Style": "Style1",
+            "Name": "slider_Brightness",
+            "X": 93,
+            "Y": 72,
+            "Width": 680,
+            "Height": 58,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Button_Back_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerCustom",
+              "TriggerCustomTypeName": "CC_LeftMenu_Back trigger_Back happens",
+              "TriggerComponent": "cC_LeftMenu_Back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ],
+        "Name": "Display",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box_Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box_Color",
+            "X": 154,
+            "Y": 167,
+            "Width": 477,
+            "Height": 291,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId62",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 110,
+              "Green": 90,
+              "Blue": 90
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 40
+            },
+            "Name": "textArea_Info_Color",
+            "X": 154,
+            "Y": 90,
+            "Width": 470,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "TestDisplay",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 36,
+              "Green": 28,
+              "Blue": 28
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_Button_Back_s.png",
+            "Released": "Button\\Button_Back.png",
+            "Alpha": 255,
+            "Name": "button_Back",
+            "X": 0,
+            "Y": 0,
+            "Width": 81,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_Home_s.png",
+            "Released": "Button\\Button_Home.png",
+            "Alpha": 255,
+            "Name": "button_Home",
+            "X": 0,
+            "Y": 82,
+            "Width": 81,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_Settings_s.png",
+            "Released": "Button\\Button_Settings.png",
+            "Alpha": 255,
+            "Name": "button_Settings",
+            "X": 0,
+            "Y": 390,
+            "Width": 81,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Back",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Back"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_LeftMenu trigger_Back happens"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Home",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Home"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Settings",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Settings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Settings"
+            }
+          }
+        ],
+        "CustomTriggers": [
+          {
+            "Name": "trigger_Back",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_LeftMenu",
+        "X": 0,
+        "Y": 0,
+        "Width": 79,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_BackGround",
+        "X": 0,
+        "Y": 0,
+        "Width": 800,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 38,
+              "Green": 34,
+              "Blue": 34
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 1,
+            "Alpha": 255,
+            "Name": "boxWithBorder_Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 0,
+            "Name": "box_Err",
+            "X": 0,
+            "Y": 0,
+            "Width": 8,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 680,
+                "Height": 70,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 3,
+                "ColorReleased": {
+                  "Red": 0,
+                  "Green": 102,
+                  "Blue": 153
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButton_Main",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueLeft",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea_Name",
+            "X": 19,
+            "Y": 23,
+            "Width": 500,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "Name": "box_Value",
+            "X": 540,
+            "Y": 10,
+            "Width": 120,
+            "Height": 50,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueCenterData",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId69",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "textArea_Value",
+            "X": 540,
+            "Y": 18,
+            "Width": 120,
+            "Height": 35,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_FrameData",
+        "X": 0,
+        "Y": 0,
+        "Width": 680,
+        "Height": 72
+      },
+      {
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 38,
+              "Green": 34,
+              "Blue": 34
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 5,
+            "Alpha": 255,
+            "Name": "boxWithBorder_Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId25",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 86,
+              "Green": 2,
+              "Blue": 92
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea_Select",
+            "X": 645,
+            "Y": 10,
+            "Width": 20,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 19,
+                "Y": 23,
+                "TextId": "ResourceIdValueLeft",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "UseBuffer": false,
+                  "BufferSize": 0
+                },
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 10,
+                  "Green": 10,
+                  "Blue": 10
+                }
+              }
+            ],
+            "Name": "flexButton_Main",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "CustomTriggers": [
+          {
+            "Name": "trigger_Click",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_FrameSelect",
+        "X": 0,
+        "Y": 0,
+        "Width": 680,
+        "Height": 72
+      },
+      {
+        "Components": [
+          {
+            "Type": "BoxWithBorder",
+            "Color": {
+              "Red": 38,
+              "Green": 34,
+              "Blue": 34
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 1,
+            "Alpha": 255,
+            "Name": "boxWithBorder_Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 255,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box_Err",
+            "X": 0,
+            "Y": 0,
+            "Width": 8,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueCenter",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea_Value",
+            "X": 624,
+            "Y": 23,
+            "Width": 50,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 100,
+                "Y": 23,
+                "TextId": "ResourceIdValueLeft",
+                "TextRotation": "0",
+                "Wildcard1": {
+                  "UseBuffer": false,
+                  "BufferSize": 0
+                },
+                "ColorReleased": {
+                  "Red": 255,
+                  "Green": 255,
+                  "Blue": 255
+                },
+                "ColorPressed": {
+                  "Red": 40,
+                  "Green": 40,
+                  "Blue": 40
+                }
+              },
+              {
+                "Type": "IconButtonStyle",
+                "X": 17,
+                "Y": 1,
+                "IconReleased": "Icon\\Icon_ABS.png",
+                "IconPressed": "Icon\\Icon_ABS.png"
+              }
+            ],
+            "Name": "flexButton_Main",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 70,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_FrameError",
+        "X": 0,
+        "Y": 0,
+        "Width": 680,
+        "Height": 72
+      },
+      {
+        "Components": [
+          {
+            "Components": [
+              {
+                "Components": [],
+                "Type": "ListLayout",
+                "Direction": "South",
+                "Name": "listLayout_Main",
+                "X": 0,
+                "Y": 0,
+                "Width": 250,
+                "Height": 250,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "ScrollableContainer",
+            "HorizontalScrollEnabled": false,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": false,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Red": 189,
+              "Green": 41,
+              "Blue": 191
+            },
+            "ScrollbarsAlpha": 255,
+            "Name": "scrollableContainer_Main",
+            "X": 0,
+            "Y": 0,
+            "Width": 685,
+            "Height": 400,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_scrollableContainer",
+        "X": 100,
+        "Y": 80,
+        "Width": 685,
+        "Height": 400
+      },
+      {
+        "Components": [
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueLeft",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 120,
+              "Blue": 120
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea_Path",
+            "X": 30,
+            "Y": 28,
+            "Width": 550,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_TopMenu",
+        "X": 81,
+        "Y": 0,
+        "Width": 719,
+        "Height": 80
+      },
+      {
+        "Components": [
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_filter_s.png",
+            "Released": "Button\\Button_filter.png",
+            "Alpha": 255,
+            "Name": "button_Filter",
+            "X": 645,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_save_s.png",
+            "Released": "Button\\Button_save.png",
+            "Alpha": 255,
+            "Name": "button_Save",
+            "X": 585,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueLeft",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 120,
+              "Green": 120,
+              "Blue": 120
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea_Path",
+            "X": 30,
+            "Y": 28,
+            "Width": 550,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Save",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Save"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_TopMenu_LiveData trigger_Save happens"
+            }
+          },
+          {
+            "InteractionName": "Interaction_Filter",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Filter"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_TopMenu_LiveData trigger_Filter happens"
+            }
+          }
+        ],
+        "CustomTriggers": [
+          {
+            "Name": "trigger_Save",
+            "HasValue": false
+          },
+          {
+            "Name": "trigger_Filter",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_TopMenu_LiveData",
+        "X": 81,
+        "Y": 0,
+        "Width": 719,
+        "Height": 80
+      },
+      {
+        "Components": [
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_ToUser_s.png",
+            "Released": "Button\\Button_ToUser.png",
+            "Alpha": 255,
+            "Name": "button_ToUser",
+            "X": 510,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_save_s.png",
+            "Released": "Button\\Button_save.png",
+            "Alpha": 255,
+            "Name": "button_Save",
+            "X": 585,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button_DeleteErr.png",
+            "Released": "Button_DeleteErr.png",
+            "Alpha": 255,
+            "Name": "button_DeleteErr",
+            "X": 650,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueLeft",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea_Path",
+            "X": 30,
+            "Y": 28,
+            "Width": 450,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ToUser",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_ToUser"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_TopMenu_ECUs trigger_ToUser happens"
+            }
+          },
+          {
+            "InteractionName": "Save",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Save"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_TopMenu_ECUs trigger_Save happens"
+            }
+          },
+          {
+            "InteractionName": "DeleteErr",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_DeleteErr"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_TopMenu_ECUs trigger_DeleteErr happens"
+            }
+          }
+        ],
+        "CustomTriggers": [
+          {
+            "Name": "trigger_ToUser",
+            "HasValue": false
+          },
+          {
+            "Name": "trigger_Save",
+            "HasValue": false
+          },
+          {
+            "Name": "trigger_DeleteErr",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_TopMenu_ECUs",
+        "X": 81,
+        "Y": 0,
+        "Width": 719,
+        "Height": 80
+      },
+      {
+        "Components": [
+          {
+            "Type": "Line",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 60,
+            "StartX": 0,
+            "StartY": 40,
+            "EndX": 360,
+            "EndY": 40,
+            "LineWidth": 5,
+            "LineEndingStyle": "Round",
+            "Name": "line1",
+            "X": 0,
+            "Y": 30,
+            "Width": 360,
+            "Height": 40,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "ResourceIdValueLeft",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textArea1",
+            "X": 11,
+            "Y": 23,
+            "Width": 310,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_CarItemScrollList",
+        "X": 0,
+        "Y": 0,
+        "Width": 360,
+        "Height": 70
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 600,
+            "Height": 358,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "image.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 0,
+            "Y": 0,
+            "Width": 140,
+            "Height": 358,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "waiting_ico.png",
+            "Alpha": 255,
+            "Name": "image2",
+            "X": 317,
+            "Y": 149,
+            "Width": 60,
+            "Height": 60,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId31",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 256,
+            "Y": 70,
+            "Width": 183,
+            "Height": 49,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_WaitingPopup",
+        "X": 0,
+        "Y": 0,
+        "Width": 600,
+        "Height": 358
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 156,
+              "Green": 206,
+              "Blue": 240
+            },
+            "Alpha": 10,
+            "Name": "box_Background",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 65,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId49",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId50",
+              "UseBuffer": true,
+              "BufferSize": 40
+            },
+            "Name": "textAreaEncryption",
+            "X": 30,
+            "Y": 40,
+            "Width": 430,
+            "Height": 25,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId41",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId51",
+              "UseBuffer": true,
+              "BufferSize": 40
+            },
+            "Name": "textAreaWiFiSSID",
+            "X": 30,
+            "Y": 3,
+            "Width": 550,
+            "Height": 35,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "Wifi\\wifi_low_icon_2x.png",
+            "Alpha": 255,
+            "Name": "imageSignalStrengthIcon",
+            "X": 594,
+            "Y": 8,
+            "Width": 48,
+            "Height": 48,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 0,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 0,
+                "Height": 0,
+                "LockToFlexButtonSize": false,
+                "BorderSize": 0,
+                "ColorReleased": {
+                  "Red": 35,
+                  "Green": 58,
+                  "Blue": 69
+                },
+                "ColorPressed": {
+                  "Red": 0,
+                  "Green": 153,
+                  "Blue": 204
+                },
+                "ColorBorderReleased": {
+                  "Red": 0,
+                  "Green": 51,
+                  "Blue": 102
+                },
+                "ColorBorderPressed": {
+                  "Red": 51,
+                  "Green": 102,
+                  "Blue": 153
+                }
+              }
+            ],
+            "Name": "flexButtonOverlay",
+            "X": 0,
+            "Y": 0,
+            "Width": 680,
+            "Height": 65,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId63",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textAreaConnected",
+            "X": 392,
+            "Y": 17,
+            "Width": 175,
+            "Height": 36,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ButtonOverlay_Clicked",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "flexButtonOverlay"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "elementSelected"
+            }
+          }
+        ],
+        "Name": "CC_WiFiInfoContainer",
+        "X": 0,
+        "Y": 0,
+        "Width": 680,
+        "Height": 70,
+        "Includes": ""
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "error_box.png",
+            "Alpha": 255,
+            "Name": "image_GradientBG",
+            "X": 40,
+            "Y": 90,
+            "Width": 560,
+            "Height": 330,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Pressed": "Button\\trye_again_button.png",
+            "Released": "Button\\trye_again_button.png",
+            "Alpha": 255,
+            "TextId": "SingleUseId47",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Name": "buttonWithLabel_WiFiRetry",
+            "X": 185,
+            "Y": 312,
+            "Width": 270,
+            "Height": 60,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId46",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea_WiFiConnectionStatus2",
+            "X": 190,
+            "Y": 254,
+            "Width": 265,
+            "Height": 45,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId45",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea_WiFiConnectionStatus1",
+            "X": 200,
+            "Y": 218,
+            "Width": 238,
+            "Height": 45,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "Wifi\\wifi_error.png",
+            "Alpha": 255,
+            "Name": "image_Error",
+            "X": 280,
+            "Y": 130,
+            "Width": 80,
+            "Height": 80,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId44",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId52",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "textArea_Connecting",
+            "X": 210,
+            "Y": 292,
+            "Width": 250,
+            "Height": 50,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "Wifi\\wifi_level_1.png",
+            "Alpha": 255,
+            "Name": "image_Connecting",
+            "X": 255,
+            "Y": 164,
+            "Width": 128,
+            "Height": 128,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId43",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Name": "textArea_ConnectingEstablished",
+            "X": 140,
+            "Y": 292,
+            "Width": 400,
+            "Height": 45,
+            "Visible": false,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "WiFiRetryPressed",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "buttonWithLabel_WiFiRetry"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_WiFiConnectingContainer WiFiRetryPressed happens"
+            }
+          }
+        ],
+        "CustomTriggers": [
+          {
+            "Name": "WiFiRetryPressed",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_WiFiConnectingContainer",
+        "X": 80,
+        "Y": 0,
+        "Width": 720,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Components": [
+              {
+                "Components": [],
+                "Type": "ListLayout",
+                "Direction": "South",
+                "Name": "listLayout_wifiList",
+                "X": 0,
+                "Y": 0,
+                "Width": 250,
+                "Height": 250,
+                "Visible": true,
+                "LockPosition": false,
+                "Draggable": false,
+                "Clickable": false,
+                "Fadeable": false,
+                "Moveable": false
+              }
+            ],
+            "Type": "ScrollableContainer",
+            "HorizontalScrollEnabled": true,
+            "VerticalScrollEnabled": true,
+            "ScrollbarsVisible": false,
+            "ScrollbarsVisibleOnPressed": true,
+            "ScrollbarsColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "ScrollbarsAlpha": 255,
+            "Name": "scrollableContainer_WiFiList",
+            "X": 20,
+            "Y": 55,
+            "Width": 680,
+            "Height": 425,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_WiFiMenuContainer",
+        "X": 80,
+        "Y": 0,
+        "Width": 720,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 36,
+              "Green": 28,
+              "Blue": 28
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 79,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Button",
+            "Pressed": "Button\\Button_Button_Back_s.png",
+            "Released": "Button\\Button_Back.png",
+            "Alpha": 255,
+            "Name": "button_Back",
+            "X": 0,
+            "Y": 0,
+            "Width": 81,
+            "Height": 81,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction_Back",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_Back"
+            },
+            "Action": {
+              "Type": "ActionEmit",
+              "TriggerCustomTypeName": "CC_LeftMenu_Back trigger_Back happens"
+            }
+          }
+        ],
+        "CustomTriggers": [
+          {
+            "Name": "trigger_Back",
+            "HasValue": false
+          }
+        ],
+        "Name": "CC_LeftMenu_Back",
+        "X": 0,
+        "Y": 0,
+        "Width": 79,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Type": "Box",
+            "Color": {
+              "Red": 163,
+              "Green": 126,
+              "Blue": 126
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_BackGround_Keyboard",
+        "X": 0,
+        "Y": 0,
+        "Width": 800,
+        "Height": 480
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "error_box.png",
+            "Alpha": 255,
+            "Name": "image_GradientBG",
+            "X": 40,
+            "Y": 90,
+            "Width": 560,
+            "Height": 330,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId67",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 235,
+              "Green": 235,
+              "Blue": 235
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId68",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "textArea_Connecting",
+            "X": 230,
+            "Y": 292,
+            "Width": 250,
+            "Height": 50,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "Wifi\\wifi_level_1.png",
+            "Alpha": 255,
+            "Name": "image_Connecting",
+            "X": 255,
+            "Y": 164,
+            "Width": 128,
+            "Height": 128,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "CC_WiFiListennigContainer",
+        "X": 80,
+        "Y": 0,
+        "Width": 720,
+        "Height": 480
+      }
+    ],
+    "TextEntries": [
+      {
+        "TextEntryId": "ResourceIdValueLeft",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "ResourceIdValueCenter",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId36",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId37",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId38",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId41",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId43",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId44",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId45",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId46",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId47",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId49",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId50",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId51",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId52",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "NumMode",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "AlphaMode",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "EnteredText",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId53",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId54",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId55",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId56",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId57",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId58",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId59",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId60",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId61",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId62",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId63",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId67",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId68",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "ResourceIdValueCenterData",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId69",
+        "IsResource": false
+      }
+    ],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "EN",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp",
+      "32": "LCD32bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../Display_Board.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "",
+    "FlashTargetCommandOverride": "",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7"
+  },
+  "Version": "4.17.0"
+}

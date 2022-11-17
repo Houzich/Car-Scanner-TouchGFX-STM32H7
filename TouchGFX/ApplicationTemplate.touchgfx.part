@@ -1,0 +1,22 @@
+
+{
+  "Application": {
+    "Name": "Display_Board",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 24 ],
+    "AvailableLCDs":
+    {
+      "24": "LCD24bpp"
+    },
+    "AvailableResolutions" : [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../Display_Board.ioc --platform=m7",
+    "Family" : "STM32H7",
+    "SubFamily" : "STM32H743/753"
+  },
+  "Version": "4.17.0"
+}

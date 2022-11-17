@@ -1,0 +1,26 @@
+"DTC_CODE [P-Code]","DTC_CODE [HEX]",DTC_OE_TEXT,"Symptom_CODE [HEX]",DTC_Symptom
+P0016,0x0016,.Engine speed detecting.. Signals from two revs sensors are not synchronized...,0x62,Signals from two revs sensors are not synchronized
+P0033,0x0033,.Engine revs detecting.. Crankshaft sensor signal absent...,0x51,Crankshaft sensor signal absent
+P0034,0x0034,.Engine revs detecting.. Camshaft sensor signal absent...,0x01,Camshaft sensor signal absent
+P0045,0x0045,.Turbocharger control valve.. Short to Ground...,0x11,Short to Ground
+P0045,0x0045,.Turbocharger control valve.. Short to Plus...,0x12,Short to Plus
+P0045,0x0045,.Turbocharger control valve.. Open circuit...,0x13,Open circuit
+P0045,0x0045,.Turbocharger control valve.. Overheating on ECU side...,0x4B,Overheating on ECU side
+P0053,0x0053,.Lambda sensor temperature.. In addition to the maximum extent...,0x1A,In addition to the maximum extent
+P0053,0x0053,.Lambda sensor temperature.. In addition to the minimum extent...,0x1B,In addition to the minimum extent
+P0060,0x0060,.ECU internal checks.. Fault detected...,0x64,fault detected
+P0063,0x0063,.TVA control deviation...,0x82,
+P0068,0x0068,.Starting-UP 50.. Too long...,0x52,too long
+P0069,0x0069,.Boost air pressure sensor.. A too low value has been detected compared to the environment pressure sensor...,0x21,A too low value has been detected compared to the environment pressure sensor
+P0069,0x0069,.Boost air pressure sensor.. A too high value has been detected compared to the environment pressure sensor...,0x22,A too high value has been detected compared to the environment pressure sensor
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+P0001,0x0001,D0001,E0001,F0001
+P0002,0x0002,D0002,E0002,F0002
+P0003,0x0003,D0003,E0003,F0003
+P0004,0x0004,D0004,E0004,F0004
+P0005,0x0005,D0005,E0005,F0005
+P0006,0x0006,D0006,E0006,F0006
