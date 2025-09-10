@@ -54,3 +54,4 @@ private:
 };
 
 #endif // MODELNUMBERVIEWBASE_HPP
+

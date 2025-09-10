@@ -48,3 +48,4 @@ void TouchGFX_Task(void *argument)
 }
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

@@ -243,3 +243,4 @@ void TouchGFXHAL::enableLCDControllerInterrupt()
 /* USER CODE END TouchGFXHAL.cpp */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

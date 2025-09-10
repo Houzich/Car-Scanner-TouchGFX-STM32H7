@@ -94,3 +94,4 @@ private:
 } // namespace touchgfx
 
 #endif // TOUCHGFX_FONTCACHE_HPP
+

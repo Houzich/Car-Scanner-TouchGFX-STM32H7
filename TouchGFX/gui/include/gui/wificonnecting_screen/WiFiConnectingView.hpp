@@ -37,3 +37,4 @@ protected:
 };
 
 #endif // WIFICONNECTINGVIEW_HPP
+

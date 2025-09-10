@@ -58,3 +58,4 @@ private:
 };
 
 #endif // WIFICONNECTINGVIEWBASE_HPP
+

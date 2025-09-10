@@ -43,3 +43,4 @@ void CC_FrameError::setIcon(const Bitmap& icon)
     flexButton_Main.setIconXY(17, 1);
 }
 
+

@@ -147,3 +147,4 @@ int UnmappedDataFont::lookupUnicode(uint16_t unicode) const
     return -1;
 }
 } // namespace touchgfx
+

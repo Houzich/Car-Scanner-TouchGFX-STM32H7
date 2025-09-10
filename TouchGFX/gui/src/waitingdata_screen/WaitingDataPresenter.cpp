@@ -16,3 +16,4 @@ void WaitingDataPresenter::deactivate()
 {
 
 }
+

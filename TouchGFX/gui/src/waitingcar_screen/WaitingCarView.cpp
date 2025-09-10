@@ -14,3 +14,4 @@ void WaitingCarView::tearDownScreen()
 {
     WaitingCarViewBase::tearDownScreen();
 }
+

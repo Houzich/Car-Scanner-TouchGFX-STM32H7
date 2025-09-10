@@ -160,3 +160,4 @@ protected:
 #endif // TouchGFXHAL_HPP
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

@@ -55,3 +55,4 @@ void MainViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         action_PKW();
     }
 }
+

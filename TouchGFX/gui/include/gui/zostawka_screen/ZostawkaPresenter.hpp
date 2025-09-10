@@ -35,3 +35,4 @@ private:
 
 
 #endif // ZOSTAWKA_PRESENTER_HPP
+

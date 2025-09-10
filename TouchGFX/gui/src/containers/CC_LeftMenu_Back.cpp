@@ -9,3 +9,4 @@ void CC_LeftMenu_Back::initialize()
 {
     CC_LeftMenu_BackBase::initialize();
 }
+

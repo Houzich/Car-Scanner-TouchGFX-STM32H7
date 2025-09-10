@@ -1,4 +1,4 @@
-﻿# Helper macros to convert spaces into question marks and back again
+# Helper macros to convert spaces into question marks and back again
 e := 
 sp := $(e) $(e)
 qs = $(subst ?,$(sp),$1)
@@ -52,4 +52,5 @@ all assets: $(filter clean,$(MAKECMDGOALS))
 all clean assets:
 	@$(MAKE) -r -f generated/simulator/gcc/Makefile -s $(MFLAGS) $@ -C "$(application_path)"
 endif
+
 

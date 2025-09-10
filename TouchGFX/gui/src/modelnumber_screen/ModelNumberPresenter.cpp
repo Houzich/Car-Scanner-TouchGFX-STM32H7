@@ -16,3 +16,4 @@ void ModelNumberPresenter::deactivate()
 {
 
 }
+

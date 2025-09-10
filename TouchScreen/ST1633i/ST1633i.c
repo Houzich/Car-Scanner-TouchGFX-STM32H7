@@ -312,3 +312,4 @@ static int32_t WriteRegWrap(void *handle, uint8_t Reg, uint8_t* pData, uint16_t 
   */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

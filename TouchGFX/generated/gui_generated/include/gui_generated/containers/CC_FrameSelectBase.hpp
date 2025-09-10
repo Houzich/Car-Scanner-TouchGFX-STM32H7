@@ -58,3 +58,4 @@ private:
 };
 
 #endif // CC_FRAMESELECTBASE_HPP
+

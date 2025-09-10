@@ -117,3 +117,4 @@ touchgfx::GeneratedFont& getFont_calibri_20_4bpp()
     static touchgfx::GeneratedFont calibri_20_4bpp(glyphs_calibri_20_4bpp, 95, 20, 4, 4, 1, 1, 1, unicodes_calibri_20_4bpp, kerning_calibri_20_4bpp, 63, 0, 0, &calibri_contextualFormsTable);
     return calibri_20_4bpp;
 }
+

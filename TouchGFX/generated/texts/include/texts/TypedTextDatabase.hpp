@@ -19,3 +19,4 @@ uint16_t getInstanceSize();
 } // namespace TypedTextDatabase
 
 #endif // TOUCHGFX_TYPEDTEXTDATABASE_HPP
+

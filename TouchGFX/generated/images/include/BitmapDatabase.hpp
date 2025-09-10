@@ -121,3 +121,4 @@ uint16_t getInstanceSize();
 } // namespace BitmapDatabase
 
 #endif // TOUCHGFX_BITMAPDATABASE_HPP
+

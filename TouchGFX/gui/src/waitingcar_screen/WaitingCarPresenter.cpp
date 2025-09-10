@@ -16,3 +16,4 @@ void WaitingCarPresenter::deactivate()
 {
 
 }
+

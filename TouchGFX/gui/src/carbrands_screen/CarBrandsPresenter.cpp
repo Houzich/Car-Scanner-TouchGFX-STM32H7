@@ -16,3 +16,4 @@ void CarBrandsPresenter::deactivate()
 {
 
 }
+
