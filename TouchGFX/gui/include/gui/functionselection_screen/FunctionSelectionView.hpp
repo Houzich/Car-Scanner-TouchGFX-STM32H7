@@ -26,3 +26,4 @@ protected:
 };
 
 #endif // FUNCTIONSELECTIONVIEW_HPP
+

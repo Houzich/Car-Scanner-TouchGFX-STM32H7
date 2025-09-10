@@ -67,3 +67,4 @@ void ECUsView::action_Back()
         application().gotoFunctionSelectionScreenNoTransition();
     }
 }
+

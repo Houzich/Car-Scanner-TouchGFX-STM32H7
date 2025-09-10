@@ -266,3 +266,4 @@ void FrontendApplicationBase::gotoDisplayScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<DisplayView, DisplayPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
+

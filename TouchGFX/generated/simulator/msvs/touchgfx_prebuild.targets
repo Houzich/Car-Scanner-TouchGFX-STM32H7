@@ -62,3 +62,4 @@
     <Exec Command="if exist $(ApplicationRoot)\simulator\portrait.png copy /y $(ApplicationRoot)\simulator\portrait.png $(OutDir) > nul" />
   </Target>
 </Project>
+

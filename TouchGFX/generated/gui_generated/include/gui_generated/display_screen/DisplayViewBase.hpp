@@ -57,3 +57,4 @@ private:
 };
 
 #endif // DISPLAYVIEWBASE_HPP
+

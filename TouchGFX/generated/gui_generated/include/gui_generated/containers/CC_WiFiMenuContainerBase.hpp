@@ -32,3 +32,4 @@ private:
 };
 
 #endif // CC_WIFIMENUCONTAINERBASE_HPP
+

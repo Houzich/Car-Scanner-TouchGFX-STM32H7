@@ -57,3 +57,4 @@ void DisplayViewBase::cC_LeftMenu_BackTrigger_BackCallbackHandler()
     //Go to Settings with no screen transition
     application().gotoSettingsScreenNoTransition();
 }
+

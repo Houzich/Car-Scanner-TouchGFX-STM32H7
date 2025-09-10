@@ -179,3 +179,4 @@ private:
 } // namespace touchgfx
 
 #endif // TOUCHGFX_GENERATEDFONT_HPP
+

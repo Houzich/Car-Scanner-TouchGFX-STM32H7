@@ -94,3 +94,4 @@ void HaveFoundCarViewBase::flexButtonCallbackHandler(const touchgfx::AbstractBut
         application().gotoWaitingDataScreenNoTransition();
     }
 }
+

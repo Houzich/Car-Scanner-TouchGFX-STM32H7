@@ -52,3 +52,4 @@ private:
 };
 
 #endif // SETTINGSVIEWBASE_HPP
+

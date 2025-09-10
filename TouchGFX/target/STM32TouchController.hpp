@@ -65,3 +65,4 @@ public:
 /* USER CODE END STM32TouchController */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

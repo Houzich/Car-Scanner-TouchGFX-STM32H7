@@ -168,3 +168,4 @@ KEEP extern const touchgfx::KerningNode kerning_ariblk_25_4bpp[] FONT_KERNING_LO
     { 0x004C, -1 },  // (First char = [0x004C, L], Second char = [0x201D, ], Kerning dist = -1)
     { 0x0066,  2 },  // (First char = [0x0066, f], Second char = [0x201D, ], Kerning dist = 2)
 };
+

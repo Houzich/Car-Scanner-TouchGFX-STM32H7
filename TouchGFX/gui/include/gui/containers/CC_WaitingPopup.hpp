@@ -14,3 +14,4 @@ protected:
 };
 
 #endif // CC_WAITINGPOPUP_HPP
+

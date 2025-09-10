@@ -155,3 +155,4 @@ const touchgfx::Unicode::UnicodeChar* touchgfx::Texts::getText(TypedTextId id) c
 {
     return &currentLanguagePtr[currentLanguageIndices[id]];
 }
+

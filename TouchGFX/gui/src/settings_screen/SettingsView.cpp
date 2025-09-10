@@ -14,3 +14,4 @@ void SettingsView::tearDownScreen()
 {
     SettingsViewBase::tearDownScreen();
 }
+

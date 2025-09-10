@@ -34,3 +34,4 @@ private:
 };
 
 #endif // WAITINGDATAPRESENTER_HPP
+

@@ -18,3 +18,4 @@ void CC_CarItemScrollList::textArea1_setWildcard(const Unicode::UnicodeChar* val
     textArea1.invalidate();
 }
 
+

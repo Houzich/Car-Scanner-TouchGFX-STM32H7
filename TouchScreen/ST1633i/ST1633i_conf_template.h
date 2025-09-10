@@ -40,3 +40,4 @@ extern "C" {
 #endif /* FT5336_CONF_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

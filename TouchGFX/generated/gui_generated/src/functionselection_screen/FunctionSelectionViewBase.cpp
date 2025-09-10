@@ -117,3 +117,4 @@ void FunctionSelectionViewBase::flexButtonCallbackHandler(const touchgfx::Abstra
         application().gotoECUsScreenNoTransition();
     }
 }
+

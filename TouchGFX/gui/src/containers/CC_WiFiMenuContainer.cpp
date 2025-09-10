@@ -48,3 +48,4 @@ void CC_WiFiMenuContainer::setAction(GenericCallback< int >& callback)
 {
     viewCallback = &callback;
 }
+
