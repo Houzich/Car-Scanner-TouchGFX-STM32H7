@@ -228,3 +228,4 @@ touchgfx::GeneratedFont& getFont_arialbd_30_4bpp()
     static touchgfx::GeneratedFont arialbd_30_4bpp(glyphs_arialbd_30_4bpp, 65, 30, 6, 4, 1, 2, 1, unicodes_arialbd_30_4bpp, kerning_arialbd_30_4bpp, 63, 0, 0, &arialbd_contextualFormsTable);
     return arialbd_30_4bpp;
 }
+

@@ -14,3 +14,4 @@ protected:
 };
 
 #endif // CC_BACKGROUND_HPP
+

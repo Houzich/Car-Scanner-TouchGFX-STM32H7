@@ -1,4 +1,4 @@
-﻿
+
 #include <gui/model/ModelListener.hpp>
 #include "gui/model/WiFi.hpp"
 #include <gui/common/structs.hpp>
@@ -209,3 +209,4 @@ void WiFiClass::updateWifiSignalStrength(void)
         }
     }
 }
+

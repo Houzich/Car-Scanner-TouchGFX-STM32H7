@@ -42,3 +42,4 @@ int8_t GeneratedFont::getKerning(Unicode::UnicodeChar prevChar, const GlyphNode*
     return 0;
 }
 } // namespace touchgfx
+

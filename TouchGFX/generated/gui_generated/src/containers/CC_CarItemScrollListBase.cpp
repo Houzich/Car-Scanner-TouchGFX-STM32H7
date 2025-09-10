@@ -32,3 +32,4 @@ void CC_CarItemScrollListBase::initialize()
 
 }
 
+

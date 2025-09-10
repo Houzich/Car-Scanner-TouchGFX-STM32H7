@@ -59,3 +59,4 @@ KEEP extern const uint32_t indicesEn[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     125, // T_ResourceIdValueCenterData
     365 // T_SingleUseId69
 };
+

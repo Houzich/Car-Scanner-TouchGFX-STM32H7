@@ -14,3 +14,4 @@ protected:
 };
 
 #endif // CC_LEFTMENU_HPP
+

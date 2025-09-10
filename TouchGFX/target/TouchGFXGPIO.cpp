@@ -74,3 +74,4 @@ bool GPIO::get(GPIO_ID id)
 /* USER CODE END TouchGFXGPIO.cpp */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

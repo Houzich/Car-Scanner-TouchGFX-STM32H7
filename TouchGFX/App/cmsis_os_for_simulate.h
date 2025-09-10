@@ -251,3 +251,4 @@ extern "C"
 #endif
 
 #endif  // _CMSIS_OS_H
+

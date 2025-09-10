@@ -387,3 +387,4 @@ void STM32H7DMA::setupDataFill(const BlitOp& blitOp)
     }
 }
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+

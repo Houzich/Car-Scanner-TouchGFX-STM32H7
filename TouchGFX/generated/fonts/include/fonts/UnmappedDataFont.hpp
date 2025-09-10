@@ -122,3 +122,4 @@ protected:
 } // namespace touchgfx
 
 #endif // TOUCHGFX_UNMAPPEDDATAFONT_HPP
+

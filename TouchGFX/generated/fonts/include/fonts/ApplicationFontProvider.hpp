@@ -51,3 +51,4 @@ public:
 };
 
 #endif // TOUCHGFX_APPLICATIONFONTPROVIDER_HPP
+

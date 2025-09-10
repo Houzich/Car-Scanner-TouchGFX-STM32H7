@@ -46,3 +46,4 @@ void WaitingDataViewBase::afterTransition()
     //Delay for 1000 ms (60 Ticks)
     waitCounter = WAIT_DURATION;
 }
+

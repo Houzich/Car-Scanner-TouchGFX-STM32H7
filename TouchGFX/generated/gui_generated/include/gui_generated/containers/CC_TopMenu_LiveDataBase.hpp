@@ -79,3 +79,4 @@ private:
 };
 
 #endif // CC_TOPMENU_LIVEDATABASE_HPP
+

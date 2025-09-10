@@ -19,3 +19,4 @@ protected:
 };
 
 #endif // CC_FRAMEERROR_HPP
+

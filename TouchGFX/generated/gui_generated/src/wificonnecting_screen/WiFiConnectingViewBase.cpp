@@ -78,3 +78,4 @@ void WiFiConnectingViewBase::buttonCallbackHandler(const touchgfx::AbstractButto
         application().gotoSettingsScreenNoTransition();
     }
 }
+

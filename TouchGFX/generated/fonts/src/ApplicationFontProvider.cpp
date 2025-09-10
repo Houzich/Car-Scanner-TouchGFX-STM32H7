@@ -37,3 +37,4 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
         return 0;
     }
 }
+
