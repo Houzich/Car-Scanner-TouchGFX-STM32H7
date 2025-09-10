@@ -15,3 +15,4 @@ protected:
 };
 
 #endif // SETTINGS_VIEW_HPP
+

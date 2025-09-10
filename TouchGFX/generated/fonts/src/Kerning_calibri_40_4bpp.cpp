@@ -91,3 +91,4 @@ KEEP extern const touchgfx::KerningNode kerning_calibri_40_4bpp[] FONT_KERNING_L
     { 0x004B, -2 },  // (First char = [0x004B, K], Second char = [0x0079, y], Kerning dist = -2)
     { 0x004C, -2 },  // (First char = [0x004C, L], Second char = [0x0079, y], Kerning dist = -2)
 };
+

@@ -44,3 +44,4 @@ void LiveDataView::tearDownScreen()
 {
 	LiveDataViewBase::tearDownScreen();
 }
+

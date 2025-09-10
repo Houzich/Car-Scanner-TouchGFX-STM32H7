@@ -230,3 +230,4 @@ clean:
 	# Remove assets folder if it is empty (i.e. no gui_generated folder)
 	@rmdir --ignore-fail-on-non-empty $(asset_root_path)
 
+

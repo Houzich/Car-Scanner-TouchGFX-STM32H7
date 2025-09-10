@@ -45,3 +45,4 @@ void ModelNumberView::SelectButtonCallbackHandler(const touchgfx::AbstractButton
 void ModelNumberView::action_Back_Click()
 {
 }
+

@@ -9,3 +9,4 @@ void CC_TopMenu_LiveData::initialize()
 {
     CC_TopMenu_LiveDataBase::initialize();
 }
+

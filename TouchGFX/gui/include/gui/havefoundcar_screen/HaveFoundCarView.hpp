@@ -20,3 +20,4 @@ protected:
 };
 
 #endif // HAVEFOUNDCARVIEW_HPP
+

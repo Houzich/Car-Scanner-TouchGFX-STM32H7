@@ -35,3 +35,4 @@ private:
 };
 
 #endif // CC_WAITINGPOPUPBASE_HPP
+

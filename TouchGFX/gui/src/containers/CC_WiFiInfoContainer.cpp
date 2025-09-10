@@ -87,3 +87,4 @@ bool CC_WiFiInfoContainer::getIsConnected()
 {
     return isConnected;
 }
+

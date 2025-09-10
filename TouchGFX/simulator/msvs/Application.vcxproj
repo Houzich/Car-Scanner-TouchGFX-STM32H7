@@ -462,3 +462,4 @@
     <Import Project="$(ApplicationRoot)\generated\simulator\msvs\touchgfx_prebuild.targets"/>
   </ImportGroup>
 </Project>
+

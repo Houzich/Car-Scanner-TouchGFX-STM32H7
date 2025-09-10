@@ -43,3 +43,4 @@ private:
 };
 
 #endif // WAITINGCARVIEWBASE_HPP
+

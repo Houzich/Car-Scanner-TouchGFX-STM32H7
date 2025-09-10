@@ -51,3 +51,4 @@ private:
 };
 
 #endif // LIVEDATAVIEWBASE_HPP
+

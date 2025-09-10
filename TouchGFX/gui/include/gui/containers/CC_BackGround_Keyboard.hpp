@@ -14,3 +14,4 @@ protected:
 };
 
 #endif // CC_BACKGROUND_KEYBOARD_HPP
+

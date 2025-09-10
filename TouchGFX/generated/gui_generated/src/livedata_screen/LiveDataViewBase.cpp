@@ -43,3 +43,4 @@ void LiveDataViewBase::cC_LeftMenu1Trigger_BackCallbackHandler()
     //Go to FunctionSelection with no screen transition
     application().gotoFunctionSelectionScreenNoTransition();
 }
+

@@ -234,3 +234,4 @@ uint16_t getInstanceSize()
     return (uint16_t)(sizeof(bitmap_database) / sizeof(touchgfx::Bitmap::BitmapData));
 }
 } // namespace BitmapDatabase
+

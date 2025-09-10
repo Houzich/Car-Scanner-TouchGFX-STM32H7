@@ -23,3 +23,4 @@ touchgfx::LCD24bpp lcd;
 touchgfx::LCD& setupLCD() {
   return lcd;
 }
+

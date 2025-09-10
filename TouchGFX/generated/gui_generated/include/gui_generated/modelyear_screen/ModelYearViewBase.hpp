@@ -54,3 +54,4 @@ private:
 };
 
 #endif // MODELYEARVIEWBASE_HPP
+

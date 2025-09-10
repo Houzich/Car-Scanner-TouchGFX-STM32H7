@@ -20,3 +20,4 @@ protected:
 };
 
 #endif // CC_FRAMEDATA_HPP
+

@@ -116,3 +116,4 @@ protected:
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
+

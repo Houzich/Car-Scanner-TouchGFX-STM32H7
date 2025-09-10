@@ -18,3 +18,4 @@ protected:
 };
 
 #endif // LIVEDATAVIEW_HPP
+

@@ -53,3 +53,4 @@ private:
 };
 
 #endif // MAINVIEWBASE_HPP
+

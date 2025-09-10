@@ -14,3 +14,4 @@ protected:
 };
 
 #endif // CC_TOPMENU_LIVEDATA_HPP
+

@@ -423,3 +423,4 @@ void FontCache::readData(void* out, uint32_t numberOfBytes)
     }
 }
 } // namespace touchgfx
+
