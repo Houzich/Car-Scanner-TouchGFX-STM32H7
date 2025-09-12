@@ -30,3 +30,4 @@ protected:
 
 #endif // CC_WIFIINFOCONTAINER_HPP
 
+

@@ -107,3 +107,4 @@ void AutomaticSearchViewBase::flexButtonCallbackHandler(const touchgfx::Abstract
     }
 }
 
+

@@ -17,3 +17,4 @@ void ModelSeriesPresenter::deactivate()
 
 }
 
+

@@ -16,3 +16,4 @@ void CC_TopMenu_ECUs::setPath(const Unicode::UnicodeChar* value)
     textArea_Path.setWildcard(value);
     textArea_Path.invalidate();
 }
+

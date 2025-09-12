@@ -35,3 +35,4 @@ private:
 
 #endif // LIVEDATAPRESENTER_HPP
 
+

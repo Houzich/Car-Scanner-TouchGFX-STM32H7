@@ -37,3 +37,4 @@ private:
 
 #endif // CC_FRAMEERRORBASE_HPP
 
+

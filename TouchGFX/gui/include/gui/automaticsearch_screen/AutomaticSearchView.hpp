@@ -26,3 +26,4 @@ protected:
 
 #endif // AUTOMATICSEARCHVIEW_HPP
 
+

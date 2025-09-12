@@ -122674,3 +122674,4 @@ KEEP extern const unsigned char image_keyboard_normal[] LOCATION_ATTRIBUTE("ExtF
     0xff, 0xff, 0xff, 0x00, 0xff, 0xff, 0xff, 0x00
 };
 
+

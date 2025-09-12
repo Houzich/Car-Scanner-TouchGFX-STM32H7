@@ -69,3 +69,4 @@ extern uint8_t encryption_ascii[30];
 
 #endif // WIFICLASS_HPP
 
+

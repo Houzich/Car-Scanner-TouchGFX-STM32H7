@@ -258,3 +258,4 @@ KEEP extern const uint8_t unicodes_calibri_10_4bpp_0[] FONT_GLYPH_LOCATION_FLASH
     0xB5, 0x07, 0x06, 0x06, 0xB7, 0x04
 };
 
+

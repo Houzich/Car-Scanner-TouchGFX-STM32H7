@@ -118,3 +118,4 @@ void FunctionSelectionViewBase::flexButtonCallbackHandler(const touchgfx::Abstra
     }
 }
 
+

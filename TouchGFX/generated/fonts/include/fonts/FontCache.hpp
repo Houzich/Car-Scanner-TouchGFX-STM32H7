@@ -95,3 +95,4 @@ private:
 
 #endif // TOUCHGFX_FONTCACHE_HPP
 
+

@@ -218,3 +218,4 @@ int32_t ST1633I_GetCapabilities(ST1633I_Object_t *pObj, ST1633I_Capabilities_t *
  */
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

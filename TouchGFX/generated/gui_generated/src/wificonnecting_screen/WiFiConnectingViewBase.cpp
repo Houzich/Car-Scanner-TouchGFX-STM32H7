@@ -79,3 +79,4 @@ void WiFiConnectingViewBase::buttonCallbackHandler(const touchgfx::AbstractButto
     }
 }
 
+

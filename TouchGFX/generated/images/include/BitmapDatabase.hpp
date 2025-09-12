@@ -122,3 +122,4 @@ uint16_t getInstanceSize();
 
 #endif // TOUCHGFX_BITMAPDATABASE_HPP
 
+

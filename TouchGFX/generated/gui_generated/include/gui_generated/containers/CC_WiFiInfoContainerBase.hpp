@@ -66,3 +66,4 @@ private:
 
 #endif // CC_WIFIINFOCONTAINERBASE_HPP
 
+

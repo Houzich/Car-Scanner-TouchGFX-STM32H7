@@ -20,3 +20,4 @@ uint16_t getInstanceSize();
 
 #endif // TOUCHGFX_TYPEDTEXTDATABASE_HPP
 
+

@@ -42,3 +42,4 @@ void CC_FrameErrorBase::initialize()
 }
 
 
+

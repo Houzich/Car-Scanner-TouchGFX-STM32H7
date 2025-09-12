@@ -50,3 +50,4 @@ void ModelSeriesViewBase::action_Back_Click()
 
 }
 
+

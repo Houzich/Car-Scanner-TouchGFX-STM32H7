@@ -77,3 +77,4 @@ KEEP extern const touchgfx::KerningNode kerning_arial_20_4bpp[] FONT_KERNING_LOC
     { 0x0056, -1 },  // (First char = [0x0056, V], Second char = [0x0079, y], Kerning dist = -1)
 };
 
+

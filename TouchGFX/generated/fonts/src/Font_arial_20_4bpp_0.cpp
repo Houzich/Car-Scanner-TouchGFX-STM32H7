@@ -622,3 +622,4 @@ KEEP extern const uint8_t unicodes_arial_20_4bpp_0[] FONT_GLYPH_LOCATION_FLASH_A
     0x00, 0x00, 0xF8, 0x07, 0x00, 0x00
 };
 
+

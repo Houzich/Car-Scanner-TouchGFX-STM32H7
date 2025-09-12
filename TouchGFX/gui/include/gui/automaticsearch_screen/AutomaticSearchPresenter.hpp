@@ -35,3 +35,4 @@ private:
 
 #endif // AUTOMATICSEARCHPRESENTER_HPP
 
+

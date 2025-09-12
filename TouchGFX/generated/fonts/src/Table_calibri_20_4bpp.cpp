@@ -118,3 +118,4 @@ touchgfx::GeneratedFont& getFont_calibri_20_4bpp()
     return calibri_20_4bpp;
 }
 
+

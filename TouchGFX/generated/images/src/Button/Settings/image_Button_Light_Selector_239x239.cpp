@@ -19048,3 +19048,4 @@ KEEP extern const unsigned char image_button_light_selector_239x239[] LOCATION_A
     0x31, 0x31, 0x31, 0x00
 };
 
+

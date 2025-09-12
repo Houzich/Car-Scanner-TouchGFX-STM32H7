@@ -67,3 +67,4 @@ void touchgfx_taskEntry()
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

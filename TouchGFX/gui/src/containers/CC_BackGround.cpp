@@ -10,3 +10,4 @@ void CC_BackGround::initialize()
     CC_BackGroundBase::initialize();
 }
 
+

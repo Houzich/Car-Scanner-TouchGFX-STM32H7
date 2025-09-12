@@ -60,3 +60,4 @@ KEEP extern const uint32_t indicesEn[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
     365 // T_SingleUseId69
 };
 
+

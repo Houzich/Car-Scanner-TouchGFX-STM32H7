@@ -16,3 +16,4 @@ protected:
 
 #endif // WAITINGDATAVIEW_HPP
 
+

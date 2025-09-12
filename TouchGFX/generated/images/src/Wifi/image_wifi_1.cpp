@@ -2141,3 +2141,4 @@ KEEP extern const unsigned char image_wifi_1[] LOCATION_ATTRIBUTE("ExtFlashSecti
     0x00, 0x00, 0x00, 0x00
 };
 
+

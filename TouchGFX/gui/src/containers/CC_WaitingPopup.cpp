@@ -10,3 +10,4 @@ void CC_WaitingPopup::initialize()
     CC_WaitingPopupBase::initialize();
 }
 
+

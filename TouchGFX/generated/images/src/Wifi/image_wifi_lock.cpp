@@ -48,3 +48,4 @@ KEEP extern const unsigned char image_wifi_lock[] LOCATION_ATTRIBUTE("ExtFlashSe
     0xff, 0xff, 0xff, 0x00
 };
 
+

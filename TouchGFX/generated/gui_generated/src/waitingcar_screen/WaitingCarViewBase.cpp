@@ -47,3 +47,4 @@ void WaitingCarViewBase::afterTransition()
     waitCounter = WAIT_DURATION;
 }
 
+

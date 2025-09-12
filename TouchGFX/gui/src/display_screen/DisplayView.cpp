@@ -64,3 +64,4 @@ void DisplayView::setBrightnessValue(int value)
 
 
 
+

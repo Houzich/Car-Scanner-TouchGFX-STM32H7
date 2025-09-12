@@ -137,3 +137,4 @@ touchgfx::GeneratedFont& getFont_ariblk_25_4bpp()
     return ariblk_25_4bpp;
 }
 
+

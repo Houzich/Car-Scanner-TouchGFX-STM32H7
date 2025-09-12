@@ -57,3 +57,4 @@ private:
 
 #endif // ZOSTAWKAVIEWBASE_HPP
 
+

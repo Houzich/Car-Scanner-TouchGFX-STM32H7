@@ -151,3 +151,4 @@ void CustomKeyboard::clearBuffer()
     setKeyMappingList();
 }
 #endif //SIMULATOR
+

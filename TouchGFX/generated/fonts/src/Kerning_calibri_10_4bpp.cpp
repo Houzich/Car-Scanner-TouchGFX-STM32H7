@@ -5,3 +5,4 @@ KEEP extern const touchgfx::KerningNode kerning_calibri_10_4bpp[] FONT_KERNING_L
     { 0, 0 }
 };
 
+

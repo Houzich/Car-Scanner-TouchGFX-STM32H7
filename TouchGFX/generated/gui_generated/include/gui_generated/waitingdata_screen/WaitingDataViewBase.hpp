@@ -44,3 +44,4 @@ private:
 
 #endif // WAITINGDATAVIEWBASE_HPP
 
+

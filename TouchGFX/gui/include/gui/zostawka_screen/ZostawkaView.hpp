@@ -16,3 +16,4 @@ protected:
 
 #endif // ZOSTAWKA_VIEW_HPP
 
+

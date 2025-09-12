@@ -55,3 +55,4 @@ bool STM32TouchController::sampleTouch(int32_t& x, int32_t& y)
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

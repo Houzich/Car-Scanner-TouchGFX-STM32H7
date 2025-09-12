@@ -244,3 +244,4 @@ void TouchGFXHAL::enableLCDControllerInterrupt()
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

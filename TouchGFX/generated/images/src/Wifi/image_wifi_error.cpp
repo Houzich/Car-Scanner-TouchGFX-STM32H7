@@ -2141,3 +2141,4 @@ KEEP extern const unsigned char image_wifi_error[] LOCATION_ATTRIBUTE("ExtFlashS
     0xff, 0xff, 0xff, 0x00
 };
 
+

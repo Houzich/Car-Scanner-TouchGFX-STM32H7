@@ -233,3 +233,4 @@ KEEP extern const unsigned char image_button_diagnose_icon[] LOCATION_ATTRIBUTE(
     0xff, 0xff, 0xff, 0x0c
 };
 
+

@@ -69,3 +69,4 @@ private:
 
 #endif // CC_LEFTMENUBASE_HPP
 
+

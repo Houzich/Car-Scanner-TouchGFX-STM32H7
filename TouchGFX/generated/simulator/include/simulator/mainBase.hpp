@@ -8,3 +8,4 @@ void setupSimulator(int argc, char** argv, touchgfx::HAL& hal);
 
 touchgfx::LCD& setupLCD();
 
+

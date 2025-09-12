@@ -44,3 +44,4 @@ void CC_FrameError::setIcon(const Bitmap& icon)
 }
 
 
+

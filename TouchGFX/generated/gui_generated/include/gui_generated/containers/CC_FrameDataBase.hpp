@@ -45,3 +45,4 @@ private:
 
 #endif // CC_FRAMEDATABASE_HPP
 
+

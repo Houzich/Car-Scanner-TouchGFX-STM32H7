@@ -15,3 +15,4 @@ void WaitingDataView::tearDownScreen()
     WaitingDataViewBase::tearDownScreen();
 }
 
+

@@ -10,3 +10,4 @@ static unsigned short SIM_HEIGHT = 480;
 
 #endif // SIMCONSTANTS_HPP
 
+

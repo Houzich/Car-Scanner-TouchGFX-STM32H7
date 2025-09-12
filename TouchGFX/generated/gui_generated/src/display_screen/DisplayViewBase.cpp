@@ -58,3 +58,4 @@ void DisplayViewBase::cC_LeftMenu_BackTrigger_BackCallbackHandler()
     application().gotoSettingsScreenNoTransition();
 }
 
+

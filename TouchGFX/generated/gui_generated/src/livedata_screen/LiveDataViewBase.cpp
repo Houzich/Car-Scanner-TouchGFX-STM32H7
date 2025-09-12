@@ -44,3 +44,4 @@ void LiveDataViewBase::cC_LeftMenu1Trigger_BackCallbackHandler()
     application().gotoFunctionSelectionScreenNoTransition();
 }
 
+

@@ -20,3 +20,4 @@ void MX_TouchGFX_Process(void);
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
 
+

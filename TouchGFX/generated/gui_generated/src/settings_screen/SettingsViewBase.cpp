@@ -102,3 +102,4 @@ void SettingsViewBase::flexButtonCallbackHandler(const touchgfx::AbstractButtonC
     }
 }
 
+

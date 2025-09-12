@@ -74,3 +74,4 @@ void ZostawkaViewBase::interaction1EndedCallbackHandler(const touchgfx::FadeAnim
 
 }
 
+

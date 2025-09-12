@@ -10,3 +10,4 @@ void CC_LeftMenu::initialize()
     CC_LeftMenuBase::initialize();
 }
 
+

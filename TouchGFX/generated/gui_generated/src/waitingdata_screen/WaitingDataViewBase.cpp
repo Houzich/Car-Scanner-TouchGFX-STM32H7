@@ -47,3 +47,4 @@ void WaitingDataViewBase::afterTransition()
     waitCounter = WAIT_DURATION;
 }
 
+

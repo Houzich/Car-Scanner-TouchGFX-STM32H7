@@ -38,3 +38,4 @@ touchgfx::Font* ApplicationFontProvider::getFont(touchgfx::FontId typography)
     }
 }
 
+

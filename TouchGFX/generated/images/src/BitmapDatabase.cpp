@@ -235,3 +235,4 @@ uint16_t getInstanceSize()
 }
 } // namespace BitmapDatabase
 
+

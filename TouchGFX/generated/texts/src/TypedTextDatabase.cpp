@@ -142,3 +142,4 @@ void resetFont(touchgfx::FontId fontId)
 }
 } // namespace TypedTextDatabase
 
+

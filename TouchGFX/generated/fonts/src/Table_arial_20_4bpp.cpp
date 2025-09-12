@@ -279,3 +279,4 @@ touchgfx::GeneratedFont& getFont_arial_20_4bpp()
     return arial_20_4bpp;
 }
 
+

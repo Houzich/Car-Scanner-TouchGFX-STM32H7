@@ -1129,3 +1129,4 @@ KEEP extern const unsigned char image_blue_slider_horizontal_large_indicators_sl
     0x00, 0x00, 0x00, 0x00
 };
 
+

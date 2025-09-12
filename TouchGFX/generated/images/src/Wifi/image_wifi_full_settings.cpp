@@ -541,3 +541,4 @@ KEEP extern const unsigned char image_wifi_full_settings[] LOCATION_ATTRIBUTE("E
     0xff, 0xff, 0xff, 0x00
 };
 
+
